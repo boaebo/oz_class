@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(45deg, yellow, lightgreen);
+    min-height: 100dvh;
+}
+
+
+.hello{
+    border: 3px solid green;
+    background-color: aliceblue;
+    padding: 10px 5px;
+    border-radius: 8px;
+    color: green;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  
+}
