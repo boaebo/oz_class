@@ -1,0 +1,49 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body{
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: aliceblue;
+
+}
+.signup-box{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color: rgb(201, 223, 216);
+    border-radius: 8px;
+    box-shadow: 8px 8px rgb(127, 244, 143), 16px 16px rgb(253, 150, 71), 24px 24px rgb(22, 110, 22), 32px 32px rgb(236, 54, 54)
+}
+
+h2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.auth, .timer{
+    text-align: right;
+    
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+
+form input,select{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid green;
+    border-radius: 5px;
+    display: flex;
+
+} 
+
+.who{
+    text-align: center;
+    font-size: 10px;
+}
+
+</style>
