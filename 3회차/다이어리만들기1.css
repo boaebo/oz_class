@@ -1,0 +1,38 @@
+
+
+body{
+    background-color:cadetblue;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.container{
+    width: 500px;
+    height: 800px;
+    background-color: aliceblue;
+    margin: auto;
+    border: 1px solid black;
+    font-size:18px;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    border: 6px dotted black;
+    border-radius: 8px;
+    padding: auto;
+    margin: 20px;
+    text-align: center;
+    background-color:antiquewhite;
+}
+
+.date{
+    text-align: right;
+    border: 4px double black;
+    margin: 20px;
+    padding: 10px;
+}
+
+.img,.main{
+    text-align: center;
+    margin: 20px;
+    border: 6px double black;
+}
