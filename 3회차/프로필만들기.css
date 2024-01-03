@@ -1,0 +1,96 @@
+body{
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    background-color:rgb(181, 133, 173)
+}
+
+.box{
+    background-color: rgb(229, 190, 218);
+    width: 700px;
+    height: 1300px;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgb(95, 53, 53);
+}
+
+.title{
+    text-shadow: 3px 3px gray;
+    font-size: 50px;
+    padding: 1px;
+    
+}
+
+.roopi {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .roopi_img {
+    margin: 0;
+    position: relative;
+    width: 230px;
+    height: 331px;
+  }
+  
+  .roopi_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease-in-out;
+  }
+  
+  .roopi_img p {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .roopi_img:hover img {
+    filter: brightness(50%);
+  }
+  
+  .roopi_img:hover p {
+    opacity: 1;
+  }
+
+
+.main{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.main2{
+    font-size: 20px;
+}
+
+.main-photo{
+    border-radius: 35%;
+    height: 50px;
+    padding: 10px;
+}
+
+.main-photo:hover img{
+    filter: brightness(50%);
+}
+
+.text1{
+    font-size: 20px;
+    padding: 40px;
+    color: rgb(95, 31, 75)
+}
+
+.main3{
+    padding: 10px;
+}
