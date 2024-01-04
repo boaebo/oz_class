@@ -1,0 +1,59 @@
+
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: antiquewhite;
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    margin: 30px;
+    
+}
+
+.side-bar_content{
+    background-color: darkgoldenrod;
+    width: 200px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.funny_content{
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 0px 8px 8px 0px;
+
+}
+
+
+.side-bar_list{
+    color: rgb(30, 39, 224);
+    padding-top: 0.5px;
+}
+
+.funny_list{
+    color: rgb(30, 39, 224);
+    padding-top: 5px;
+}
+
+.title1{
+    font-size: 25px;
+    text-shadow: 3px 3px rgb(78, 75, 75);
+}
+
+.funny_title > p{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+}
