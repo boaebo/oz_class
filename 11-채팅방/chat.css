@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gaegu', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+
+}
+
+.container{
+    background-color: rgb(135, 189, 171);
+    height: 100%
+}
+
+.user{
+    background: linear-gradient(45deg, rgb(157, 153, 94), rgb(225, 222, 216));
+    padding: 16px;
+    height: 90px;
+    border-bottom: 2px solid rgb(127, 87, 87);
+}
+
+.user_pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.chat-screen{
+    height: 100% - 120px;
+}
+
+
+.user_nick, .user_count{
+    margin: 5px;
+}
+
+.user_nick{
+    font-size: 20px;
+    padding-left: 10px;
+    color: crimson;
+}
+
+.user_column{
+    float: left;
+}
+
+.user_count{
+    color: gray;
+    padding-left: 10px;
+}
+
+.chat-form_message{
+    height: 120px;
+    width: calc(100% - 120px);
+    border: 0;
+    padding: 10px;
+    resize: none;
+}
+
+.chat-form_bt{
+    height: 120px;
+    width: 120px;
+    float: right;
+    background-color: rgb(170, 74, 74);
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+.chat-form_bt:active{
+    background-color: burlywood;
+}
+
+.chat-form_bt:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.chatting{
+    padding: 50px;
+    font-size: 20px;
+}
+
+
+p{
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    flex-direction:column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    box-shadow: 3px 3px 3px gray;
+
+}
+
+
+p:nth-child(1n){
+    background-color: antiquewhite;
+    
+}
+
+p:nth-child(2n){
+    background-color: rgb(116, 80, 33);
+    float: right;
+}
+
+p:hover{
+    background-color: rgb(189, 237, 65);
+}
