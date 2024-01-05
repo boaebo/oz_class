@@ -1,0 +1,118 @@
+body{
+    background-image: url(https://img.freepik.com/premium-photo/a-snowy-landscape-with-a-snowy-field-and-mountains-in-the-background_855221-698.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hat-up{
+    width: 60px;
+    height: 50px;
+    background-color: darkblue;
+    border-radius: 7px 7px 0px 0px;
+    
+}
+
+.hat-down{
+    width: 100px;
+    height: 20px;
+    background-color: darkblue;
+    border-radius: 7px;
+}
+
+.head{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: white;
+    right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 9%;   
+
+}
+
+.eye{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.eyes{
+    display: flex;
+    gap: 40%;
+}
+
+.mouth{
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.snowman-body{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arm{
+    width:80px;
+    height: 10px;
+    background-color: rgb(121, 24, 24);
+    position: absolute;
+
+}
+
+.arm:nth-child(1){
+    transform: rotate(45deg);
+    position: relative;
+    right: 80px;
+    top: -50px;
+}
+
+.arm:nth-child(2){
+    transform: rotate(135deg);
+    position: relative;
+    left: 90px;
+    top: -65px;
+}
+
+.bt{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 100%;
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    right: 40px;
+}
+
+.face{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
