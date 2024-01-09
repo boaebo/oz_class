@@ -1,0 +1,129 @@
+*{
+    font-family: 'Poor Story', system-ui;
+}
+
+
+ul{
+   list-style-type: none;
+}
+
+.container{
+    width: 500px;
+    height: 800px;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+
+.text-bar{
+    background-color: rgb(255, 114, 137);
+    padding: 15px;
+    display: flex;
+    height: 70px;
+}
+
+.text-bar-up{
+    color: white;
+    font-size: 25px;
+}
+
+.user{
+    line-height: 5px;
+    padding-left: 10px;
+}
+
+.profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.send-area{
+    height: 120px;
+    display: flex;
+}
+
+.sendtext{
+    width: 440px;
+    resize: none;
+    height: 120px;
+    border: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.screen{
+    height:100%;
+    background-color: pink;
+    overflow: scroll;
+}
+
+.sendbt{
+    width: 60px;
+    height: 124px;
+    float: right;
+    border-radius: 3px;
+    background-color: blanchedalmond;
+    border: 1px solid brown;
+    font-size: 18px;
+}
+
+.sendbt:hover{
+    background-color: brown;
+}
+
+/* 채팅방 */
+
+.say{
+    font-size: 22px;
+    position: relative;
+}
+
+
+.zanmang_say{
+    position: absolute;
+    display: block;
+    text-align: left;
+}
+
+.me_say{
+    position: absolute;
+    display:inline-block;
+    top: 100px;
+    right: 30px;
+    text-align: right;
+}
+
+li{
+    padding: 20px;
+    margin-bottom: 130px;
+    width: fit-content;
+}
+
+
+.zanmang_say li{
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.me_say li{
+    background-color: cadetblue;
+    border-radius: 10px;
+    float:inline-end;
+}
+
+.zanmang_say>li::before{
+    content: '';
+    border-top: 10px solid bisque;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: 20px;
+}
+
+.me_say>li::before{
+    content: '';
+    border-top: 10px solid cadetblue;
+    border-right: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+}
