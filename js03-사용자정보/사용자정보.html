@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        text-align: center;
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <h1 id="name"></h1>
+    <p id="singer"></p>
+    <p id="song"></p>
+    <p id="ment"></p>
+
+    <script>
+        const nameElement = document.querySelector("#name")
+        let name = prompt("당신의 이름은?")
+        nameElement.textContent = `안녕하세요! 제 이름은 ${name}입니다 *^^*`
+        
+        const singerElement = document.querySelector("#singer")
+        let singer = prompt("가장 좋아하는 가수는?")
+        singerElement.textContent = `제가 가장 좋아하는 가수는 ${singer} 입니다.`
+
+        const songElement = document.querySelector("#song")
+        let song = prompt("해당 가수의 무슨 노래를 가장 좋아하나요?")
+        songElement.textContent = `저는 ${singer}의 노래중에서 ${song}을(를) 가장 좋아합니다.`
+
+        const mentElement = document.querySelector("#ment")
+        let ment = prompt("마지막으로 해당 가수에게 응원의 한 마디 해주세요.")
+        mentElement.textContent = `${ment}. 그럼 이만!`
+    </script>
+</body>
+</html>
