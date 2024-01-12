@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .img-wrap{
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .img-wrap > .imgs{
+            display: flex;
+            transform: translate3d(0, 0, 0);
+            transition: transform 0.2s;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+        }
+
+        button{
+            width: 60px;
+            height: 50px;
+            border-radius: 5px;
+            border: 0.5px solid palevioletred;
+            background-color: pink;
+            margin: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img-wrap">
+        <div class="imgs">
+            <img src="IMG_4068.jpeg">
+            <img src="IMG_4067.jpeg">
+            <img src="IMG_4066.jpeg">
+        </div>
+    </div>
+    <div class="bts">
+        <button class="버튼1">첫번째</button>
+        <button class="버튼2">두번째</button>
+        <button class="버튼3">세번째</button>
+        <button class="버튼4">배경색</button>
+    </div>
+    <script src="캐러셀2.js"></script>
+</body>
+</html>
