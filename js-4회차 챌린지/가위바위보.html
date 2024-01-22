@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>가위바위보 게임</h1>
+    <p>가위, 바위, 보 중 하나를 입력하세요.</p>
+    <input type="text" id="textarea">
+    <button id="btn">결과 확인</button>
+    <p id="result"></p>
+
+    <script>
+       
+        const result = document.querySelector('#result')
+        const textarea = document.querySelector('#textarea')
+        const btn = document.querySelector('#btn')
+
+        const gameArray = ["가위","바위","보"];
+
+        btn.addEventListener("click", function(){
+
+            let comSelect = gameArray[Math.floor(Math.random() * 3)];
+            
+            let userSelect = textarea.value;
+            let resultmsg;
+
+            if(comSelect === userSelect){
+                resultmsg = "비겼습니다."
+            } else if(
+                (userSelect === "바위" && comSelect === "가위") ||
+                (userSelect === "보" && comSelect === "바위") ||
+                (userSelect === "가위" && comSelect === "보")
+            ) {
+                resultmsg = "이겼습니다."
+            } else {
+                resultmsg = "졌습니다."
+            }
+            result.textContent = `당신의 선택 : ${userSelect} / 컴퓨터의 선택 : ${comSelect} / 결과 : ${resultmsg}`
+            
+            
+        });
+
+    </script>
+</body>
+</html>
