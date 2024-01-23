@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #stop{
+            position: absolute;
+            bottom: 200px;
+            left: 400px;
+            width: 100px;
+            height: 50px;
+            background-color: plum;
+            border: 3px solid black;
+            font-size: 25px;
+        }
+
+        #stop:active{
+            background-color: blueviolet;
+        }
+
+        #imgs{
+            width: 700px;
+        }
+    
+    </style>
+</head>
+<body>
+<div id="img"></div>
+<button id="stop">멈춰!</button>
+
+<script>
+ const container = document.querySelector("#img")
+ const stopBtn = document.getElementById("stop")
+ const img = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg",]
+
+ let i=0
+ const random = setInterval(function(){
+    if(i>img.length){
+        i=0
+    }
+    container.style.backgroundImage = `(${[i].jpg})`
+ })
+
+   
+ 
+</script>
+  
+</body>
+</html>
