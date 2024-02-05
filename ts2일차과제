@@ -179,3 +179,122 @@ let move: Direction = Direction.Upward;
 
 Upward는 정의되어있지 않다. Upward를 사용하고 싶으면 enum Direction에 추가해야한다.
 
+
+
+
+
+도전
+
+1. 문제: 각 변수에 알맞은 타입을 지정해주세요.
+let age:number  = 30;
+let isPerson: boolean = true;
+let a: number[] = [1,2,3];
+let b: number[] = [2,3,4];
+let rgb: string[] = ['red','green','blue'];
+let fruits: string[] = ['apple', 'banana', 'orange'];
+
+
+2. 문제: 함수 시그니처 (x: number, y: number) => number에 맞는 multiply 함수를 작성하고, 두 숫자의 곱을 반환하세요.
+function multiply(x: ______, y: ______): ______ {
+  return _____;
+}
+
+  function multiply (x: number, y:number):number{
+  return x * y;
+  }
+
+3. 문제: 타입 number[]을 가진 배열 numbers에서 모든 홀수를 제거하는 함수를 작성하세요.
+function removeOdds(numbers: _______): _______ {
+  return ______________________________;
+}
+
+function removeOdds(numbers: number[]):number[]{
+  return numbers.filter(n
+}
+
+4. 문제: Book 인터페이스를 정의하고, title과 author 속성을 포함하는 객체를 만든 다음, 책 제목과 저자를 결합한 문자열을 반환하는 함수를 작성하세요.
+interface Book { title: ______; author: ______; }
+function formatBook(book: ____): ______ {
+  return ______________________________;
+}
+
+interface Book { title: string; author: string;}
+function formatBook(book: Book): string {
+return `${title} #{author}`;
+}
+
+6. 문제: 유니언 타입 string | number을 사용하여, 문자열 또는 숫자를 받아 그 길이 또는 값을 반환하는 함수를 작성하세요.
+function getSize(value: _______________): ______ {
+  return ________________________________________________;
+}
+
+
+function getSize(value : string | number): number  {
+  if(typeof value === "string"){
+    return value.length;
+  }
+    return value;
+}
+
+7. 문제: 인터페이스 Point를 확장하는 ColoredPoint 인터페이스를 생성하고, color 속성을 추가하세요.
+interface Point { x: number; y: number; }
+____________________________________ { _______________ }
+
+interface Point { x: number; y: number; }
+interface twoPoint extends Point { color : string;}
+
+
+8. 문제: Vehicle 인터페이스를 확장하는 Car 인터페이스를 만들고 numberOfDoors 속성을 추가하세요. Car 객체를 받아 문의 개수를 반환하는 함수를 작성하세요.
+interface Vehicle { wheels: number; }
+______________________________________________________
+function getNumberOfDoors(car: ___): ______ {
+  return __________________;
+}
+
+
+interface Veicle {wheels:number;}
+interface Car extends Veicle { numberOfDoors: number;}
+function getNumberOfDoors(car:Car):number{
+  return car.numberOfDoors;
+}
+
+
+9. 문제: 인터페이스 Rectangle을 정의하고, 두 속성 width와 height를 포함한 객체를 생성하세요. 또한, 면적을 반환하는 함수를 작성하세요.
+interface Rectangle {
+  width: ______;
+  height: ______;
+}
+
+const rect: _________ = { __________, __________ };
+
+function getArea(rectangle: _________): ______ {
+  return ____________________________________;
+}
+
+
+interface Rectangle{
+  width: number;
+  height: number;
+}
+
+const rect: Rectangle = {width:20, height:20};
+
+function getArea(rectangle: Rectangle ): number{
+   return Rectangle.width * Rectangle.height;
+}
+
+10. 문제: 이름과 나이를 나타내는 NameAge 튜플 타입을 만들고, 이름과 나이를 받아 NameAge 튜플을 반환하는 createPerson 함수를 작성하세요.
+type NameAge = ______________;
+function createPerson(name: ______, age: ______): NameAge {
+  return ____________;
+}
+
+
+type NameAge = [string, number];
+function createPreson(name: string, age: number): NameAge{
+  return [name, age];
+}
+
+
+
+
